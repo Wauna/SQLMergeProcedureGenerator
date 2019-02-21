@@ -163,9 +163,9 @@ BEGIN
         FROM @tableStructure
         WHERE RowID=@CurrentRow
 		 IF @CurrentRow <> @RowsToProcess 	 	
-			PRINT '                   ' + @SelectCol1 + ','
+			PRINT '                   [' + @SelectCol1 + '],'
 ELSE
-			PRINT '                   ' + @SelectCol1 
+			PRINT '                   [' + @SelectCol1 =']'
 END
 
 PRINT '             )'
